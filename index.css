@@ -91,3 +91,38 @@ p {
 .card p {
     padding-top: 20px;
 }
+
+hr {
+    width: 95%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-color: #13435f;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact-header {
+    padding: .5em;
+}
+
+input, textarea {
+    border: 1px solid #5a5959;
+    border-radius: 10px;
+    padding: .5em;
+    margin: 1em;
+    font-size: 1em;
+}
+
+.fas, .fab {
+    color: #13435f;
+}
+
+footer {
+    text-align: center;
+}
+
+footer h5 {
+    margin: 1em;
+}
