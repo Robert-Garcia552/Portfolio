@@ -19,15 +19,15 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <div class="header">
-            <h2 class="header-name">Robert Garcia</h2>
-            <h2 class="header-description">Web Developer in Miami, FL</h2>
+            <h1 class="header-name">Robert Garcia</h1>
+            <h1 class="header-description">Web Developer in Miami, FL</h1>
         </div>
         <div class="container">
-            <div class="main-text">
-                <h4>Experienced web developer and designer located in Miami, FL</h4>
+            <div class="container-item">
+                <h2>Experienced web developer and designer located in Miami, FL</h2>
             </div>
-            <div class="main-image">
-                <img src="./assets/template_marketplace.jpg" alt="laptop displaying templates" height="400px">
+            <div class="container-item">
+                <img src="./assets/template_marketplace.jpg" alt="laptop displaying templates" class="container-image">
            </div>
         </div>
         <div class="card-container">
@@ -36,7 +36,7 @@
                 <h4>
                     Mobile First
                 </h4>
-                <p>Always ensuring a smooth user experience on all devices. Ensuring a completely responsive design for your site is my priority.</p>
+                <p>Always ensuring a smooth user experience on all devices. All of your web views will be completely responsive.</p>
             </div>
             <div class="card">
                 <img src="./assets/text_editor_code.jpg" alt="text editor with code" class="card-image">
@@ -55,12 +55,24 @@
         </div>
         <div class="contact">
             <h3 class="contact-header">Get in touch!</h3>
-            <h4>Currently <span style="color: rgb(10, 136, 10);">Available</span>, let's start working on something great.</h4>
-            <form>
-                <input type="text" id="name" placeholder="Name">
-                <input type="text" id="email" placeholder="email">
-                <textarea rows="2" id="message" placeholder="Message"></textarea>
+            <h4>Currently <span style="color: rgb(10, 136, 10);">Available</span>, let's discuss your next great idea!</h4>
+            <form id="contact">
+                <div class="contact-form">
+                    <div>
+                        <input type="text" id="name" placeholder="Name">
+                    </div>
+                    <div>
+                        <input type="text" id="email" placeholder="email">
+                    </div>
+                    <div>
+                        <textarea rows="1" id="message" placeholder="Message"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="submit">Submit</button>
             </form>
+            <div id='flash-message' style="width: 60%;margin: 2em auto">
+                    <!-- if contact form submitted a success or failure message appears here -->
+            </div>
         </div>
         <hr>
         <footer>
@@ -75,9 +87,13 @@
                     <a target="_blank" href="https://www.linkedin.com/in/Robert-Garcia552"><i class="fab fa-linkedin fa-5x"></i></a>
                 </div>
             </div>
-            <h5>Copyright © 2019 Robert Garcia - All Rights Reserved</h5>
+            <h5>Copyright © 2019 Robert Garcia</h5>
         </footer>
-        
-        <script src="" async defer></script>
+        <script src="index.js"></script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="/__/firebase/6.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-firestore.js"></script>
+        <!-- Initialize Firebase -->
+        <script src="/__/firebase/init.js"></script>
     </body>
 </html>

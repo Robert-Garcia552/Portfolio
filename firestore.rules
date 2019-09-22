@@ -1,0 +1,8 @@
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /leads/{leadId} {
+      allow create: if request.resource.data.email.matches('.*@.*[.].*') && request.resource.data.email.size() > 6;
+      allow read: if request.auth.uid != null;
+    }
+  }
+}
