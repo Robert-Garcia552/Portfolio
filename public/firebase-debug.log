@@ -1,0 +1,45 @@
+[debug] [2019-09-25T03:46:55.570Z] ----------------------------------------------------------------------
+[debug] [2019-09-25T03:46:55.571Z] Command:       /usr/local/Cellar/node/12.9.1/bin/node /usr/local/bin/firebase serve
+[debug] [2019-09-25T03:46:55.572Z] CLI Version:   7.3.2
+[debug] [2019-09-25T03:46:55.572Z] Platform:      darwin
+[debug] [2019-09-25T03:46:55.572Z] Node Version:  v12.9.1
+[debug] [2019-09-25T03:46:55.581Z] Time:          Tue Sep 24 2019 23:46:55 GMT-0400 (Eastern Daylight Time)
+[debug] [2019-09-25T03:46:55.581Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-09-25T03:46:55.589Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-09-25T03:46:55.589Z] > authorizing via signed-in user
+[debug] [2019-09-25T03:46:55.589Z] [iam] checking project personal-portfolio-1cee6 for permissions ["firebase.projects.get"]
+[debug] [2019-09-25T03:46:55.590Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/personal-portfolio-1cee6:testIamPermissions  
+
+[debug] [2019-09-25T03:46:56.470Z] <<< HTTP RESPONSE 200
+[debug] [2019-09-25T03:46:56.472Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/personal-portfolio-1cee6  
+ 
+[debug] [2019-09-25T03:46:56.949Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/robert/Desktop/Personal_Portfolio'...
+[info] 
+[debug] [2019-09-25T03:46:56.952Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/personal-portfolio-1cee6/webApps/-/config  
+ 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "12"
+[info] ✔  functions: Emulator started at http://localhost:5001
+[debug] [2019-09-25T03:46:57.280Z] <<< HTTP RESPONSE 200
+[info] i  functions: Watching "/Users/robert/Desktop/Personal_Portfolio/functions" for Cloud Functions...
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2019-09-25T03:46:57.479Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/robert/Desktop/Personal_Portfolio/functions","node_version":"12.9.1"}
+[debug] [2019-09-25T03:46:57.480Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-25T03:46:57.481Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.0","resolution":"/Users/robert/Desktop/Personal_Portfolio/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-25T03:46:57.482Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/robert/Desktop/Personal_Portfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-25T03:46:57.483Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/robert/Desktop/Personal_Portfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  TypeError: Cannot read property 'email' of undefined
+    at Object.<anonymous> (/Users/robert/Desktop/Personal_Portfolio/functions/index.js:11:44)
+    at Module._compile (internal/modules/cjs/loader.js:936:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Module.require (internal/modules/cjs/loader.js:830:19)
+    at require (internal/modules/cjs/helpers.js:68:18)
+    at /usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:677:33
+    at Generator.next (<anonymous>)
+    at fulfilled (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:4:58)
+[warn] ⚠  We were unable to load your functions code. (see above)

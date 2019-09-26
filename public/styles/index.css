@@ -1,0 +1,171 @@
+body {
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 4em;
+}
+
+h3 {
+    font-size: 3em;
+}
+
+h4 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1em;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    background-color: #277AA0;
+    color: white;
+}
+
+.header-name {
+    float: left;
+    font-size: 4em;
+    padding-left: 10px;
+    margin: 10px;
+}
+
+.header-description {
+    float: right;
+    font-size: 2em;
+    padding: 10px 10px;
+    margin: 20px;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-image: url('../assets/miami_background.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.container-item {
+    width: 500px;
+    padding: 80px;
+    text-align: center;
+}
+
+.container-item h2 {
+    color: #1c4646;
+    background: white;
+    opacity: .7;
+    border-radius: 10px;
+}
+
+.container-image {
+    height: 400px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.card-container {
+    display: flex; 
+    justify-content: space-evenly;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 100%;
+    width: 300px;
+    text-align: center;
+}
+
+.card-image {
+    height: 275px;
+    width: 290px;
+    border-radius: 10px;
+}
+
+.card h4 {
+    padding-top: 10px;
+}
+
+.card p {
+    padding-top: 20px;
+    letter-spacing: .5px;
+    font-size: 1.3em;
+}
+
+.about {
+    margin-top: 2em;
+    background: rgb(215,204,181);
+    background: linear-gradient(90deg, rgba(215,204,181,1) 0%, rgba(1,122,162,1) 100%);
+    padding: 3em;
+}
+
+.about p {
+    margin: 1em auto;
+    width: 60%;
+    text-align: center;
+    letter-spacing: .7px;
+    font-size: 1.5em;
+}
+
+hr {
+    width: 95%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-color: #13435f;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact-header {
+    padding: .5em;
+}
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2em 0;
+}
+
+.submit {
+   background: #13435f; 
+   color: white;
+   border-radius: 20px;
+   height: 50px;
+   width: 100px;
+   font-size: 1em;
+}
+
+input, textarea {
+    border: 1px solid #5a5959;
+    border-radius: 10px;
+    padding: .5em;
+    margin: 1em;
+    font-size: 1em;
+}
+
+.fas, .fab {
+    color: #13435f;
+}
+
+footer {
+    text-align: center;
+}
+
+footer h5 {
+    margin: 1em;
+}
