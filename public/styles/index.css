@@ -33,21 +33,11 @@ p {
 }
 
 .header-name {
-    float: left;
-    font-size: 4em;
-    padding-left: 10px;
-    margin: 10px;
-}
-
-.header-description {
-    float: right;
-    font-size: 2em;
-    padding: 10px 10px;
-    margin: 20px;
+    width: 100%;
+    padding: 16px 0;
 }
 
 .container {
-    height: 100%;
     width: 100%;
     color: white;
     background-image: url('../assets/miami_background.jpg');
@@ -55,17 +45,31 @@ p {
     background-size: cover;
 }
 
-.container-item {
-    width: 500px;
-    padding: 80px;
+.container-text {
+    padding: 16px;
     text-align: center;
-}
-
-.container-item h2 {
     color: #1c4646;
     background: white;
     opacity: .7;
-    border-radius: 10px;
+}
+
+@media screen and (min-width: 800px) {
+    .container {
+        height: 350px;
+    }
+
+    .container-item {
+        padding: 60px;
+    }
+
+    .container-text {
+        width: 500px;
+        text-align: center;
+        color: #1c4646;
+        background: white;
+        opacity: .7;
+        border-radius: 10px;
+    }
 }
 
 .container-image {
