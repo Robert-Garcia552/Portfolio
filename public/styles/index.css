@@ -18,58 +18,43 @@ h4 {
     font-size: 2em;
 }
 
-p {
-    font-size: 1em;
-}
-
 .header {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
-    text-align: center;
-    background-color: #277AA0;
-    color: white;
+    padding: 4px;
 }
 
 .header-name {
     width: 100%;
-    padding: 16px 0;
+    text-align: center;
+    font-size: 4em;
 }
 
 .container {
+    height: -webkit-fill-available;
+    min-height: 100%;  
     width: 100%;
     color: white;
-    background-image: url('../assets/miami_background.jpg');
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+        ),
+        url('../assets/miami_background.jpg');
     background-position: center;
-    background-size: cover;
+    background-size: cover;     
 }
 
 .container-text {
-    padding: 16px;
+    margin: auto;
     text-align: center;
-    color: #1c4646;
-    background: white;
-    opacity: .7;
+    font-size: 3em;
+    padding: 2px;
 }
 
-@media screen and (min-width: 800px) {
-    .container {
-        height: 350px;
-    }
-
-    .container-item {
-        padding: 60px;
-    }
-
-    .container-text {
-        width: 500px;
-        text-align: center;
-        color: #1c4646;
-        background: white;
-        opacity: .7;
-        border-radius: 10px;
-    }
+.nav {
+    visibility: hidden;
 }
 
 .container-image {
@@ -81,7 +66,7 @@ p {
 .card-container {
     display: flex; 
     justify-content: space-evenly;
-    padding-top: 20px;
+    padding-top: 16px;
     flex-wrap: wrap;
 }
 
@@ -89,6 +74,7 @@ p {
     height: 100%;
     width: 300px;
     text-align: center;
+    margin-bottom: 16px;
 }
 
 .card-image {
@@ -107,19 +93,23 @@ p {
     font-size: 1.3em;
 }
 
-.about {
-    margin-top: 2em;
+#about {
     background: rgb(215,204,181);
     background: linear-gradient(90deg, rgba(215,204,181,1) 0%, rgba(1,122,162,1) 100%);
     padding: 3em;
 }
 
-.about p {
-    margin: 1em auto;
-    width: 60%;
+#about p {
+    margin: auto;
+    width: 90%;
     text-align: center;
     letter-spacing: .7px;
     font-size: 1.5em;
+    padding: 16px;
+}
+
+#about h3 {
+    text-align: center;
 }
 
 hr {
@@ -131,10 +121,15 @@ hr {
 
 .contact {
     text-align: center;
+    margin: 16px auto;
+    width: 70%;
+    text-align: center;
+    letter-spacing: .7px;
+    font-size: 1.5em;
 }
 
 .contact-header {
-    padding: .5em;
+    padding-bottom: 16px;
 }
 
 .contact-form {
@@ -142,7 +137,7 @@ hr {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    margin: 2em 0;
+    margin: 1em 0;
 }
 
 .submit {
@@ -157,9 +152,20 @@ hr {
 input, textarea {
     border: 1px solid #5a5959;
     border-radius: 10px;
-    padding: .5em;
+    padding: 1em;
     margin: 1em;
-    font-size: 1em;
+}
+
+#feedback {
+    margin: 1em auto;
+}
+
+.success {
+    color: green;
+}
+
+.danger {
+    color: red;
 }
 
 .fas, .fab {
@@ -172,4 +178,38 @@ footer {
 
 footer h5 {
     margin: 1em;
+}
+
+@media screen and (min-width: 800px) {
+    .nav {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        font-size: 1.3em;
+        visibility: visible;
+    }
+
+    .nav-link {
+        margin-left: 4em;
+    }
+
+    .nav a:link, .nav a:visited, .nav a:hover, .nav a:active {
+        color: white;
+        text-decoration: none;
+    }
+
+    .header-name {
+        width: 50%;
+        text-align: left;
+    }
+
+    .container-item {
+        padding: 60px;
+    }
+
+    .container-text {
+        width: 500px;
+        text-align: center;
+        color: white;
+    }
 }

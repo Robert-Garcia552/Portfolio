@@ -18,15 +18,20 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="header">
-            <h1 class="header-name">Robert Garcia</h1>
-        </div>
         <div class="container">
-          <div class="container-item">
+            <div class="header">
+                <h1 class="header-name">Robert Garcia</h1>
+                <div class="nav">
+                    <a href="#work-ethic">Work Ethic</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#contact-section" class="nav-link">Contact</a>
+                </div>
+            </div>
+            <div class="container-item">
               <h2 class="container-text">Experienced web developer in Miami, FL</h2>
-          </div>
+            </div>
         </div>
-        <div class="card-container">
+        <div class="card-container" id="work-ethic">
             <div class="card">
                 <img src="./assets/mobile_first.jpg" alt="mobile first design" class="card-image">
                 <h4>
@@ -49,8 +54,8 @@
                 <p>Once we get started I am responsive to your needs and most importantly reactive to any changes you request.</p>
             </div>
         </div>
-        <div class="about">
-          <h3 style="text-align: center;">About Me</h3>
+        <div id="about">
+          <h3>About Me</h3>
           <p>
             Experienced web developer with three years of experience. I am always eager to learn and enhance user experiences on the 
             web. If you ever just wanted to talk about an issue at hand I enjoy solving problems with a solutions oriented mindset.
@@ -58,10 +63,12 @@
             working in omni-channel environments in a management capacity. 
           </p>
         </div>
-        <div class="contact">
+        <div class="contact" id="contact-section">
             <h3 class="contact-header">Get in touch!</h3>
-            <h4>Currently <span style="color: rgb(10, 136, 10);">Available</span>, let's discuss your next great idea!</h4>
-            <form id='contact'>
+            <p style="font-size: 1.5em;width: 80%;margin: auto;">Currently <span style="color: rgb(10, 136, 10);">Available</span>, let's discuss your next great idea!</p>
+            <div id='feedback'>
+            </div>
+            <form id="contact">
                 <div class="contact-form">
                     <div>
                         <input type="text" name="name" id="name" placeholder="Name">
@@ -74,9 +81,6 @@
                     </div>
                 </div>
                 <button type="submit" class="submit">Submit</button>
-                <div>
-                    <p id='feedback'></p>
-                </div>
             </form>
         </div>
         <hr>
@@ -94,5 +98,20 @@
             </div>
             <h5>Copyright © 2019 Robert Garcia</h5>
         </footer>
+
+        <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-firestore.js"></script>
+        <script>
+            firebase.initializeApp({
+                apiKey: "AIzaSyCYBjp1Ikj6DExR4lvWyeE_4niIU9QdEL4",
+                authDomain: "personal-portfolio-1cee6.firebaseapp.com",
+                databaseURL: "https://personal-portfolio-1cee6.firebaseio.com",
+                projectId: "personal-portfolio-1cee6",
+                storageBucket: "personal-portfolio-1cee6.appspot.com",
+                messagingSenderId: "900349630083",
+                appId: "1:900349630083:web:2effd19764c316e2f02db6"
+            });
+        </script>
+        <script type='text/javascript' src='./assets/scripts/index.js'></script>
     </body>
 </html>
