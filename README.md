@@ -21,4 +21,7 @@ To run locally:
 
 1. git clone repo
 2. firebase serve
-3. firebase deploy --only hosting
+
+### Deployment 
+
+* firebase deploy --only hosting
