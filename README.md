@@ -6,7 +6,7 @@ Robert Garcia
 
 ### Purpose 
 
-Showcase recent projects and add a form for potential clients.
+Showcase recent projects and a form for potential clients.
 
 #### Technology
 
